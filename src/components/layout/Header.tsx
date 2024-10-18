@@ -69,7 +69,7 @@ export default function Header() {
       {/* Logo */}
 
       <img
-        src="admin/images/logo.webp"
+        src="/admin/images/logo.webp"
         alt="Logo"
         className="max-h-[150px] w-2/3 xs:w-3/6 sm:w-2/6 md:w-1/4 lg:w-1/5"
       />
