@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-[rgba(117,117,117,0.8)] dark:bg-slate-900/80 p-4">
       <h1>Page principale</h1>
       <Button>
-        <Link href="/products">Produits</Link>
+        <Link href="/admin/products">Produits</Link>
       </Button>
     </div>
   );

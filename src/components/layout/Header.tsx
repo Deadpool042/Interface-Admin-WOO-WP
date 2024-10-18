@@ -69,14 +69,14 @@ export default function Header() {
       {/* Logo */}
 
       <img
-        src="/images/logo.webp"
+        src="admin/images/logo.webp"
         alt="Logo"
         className="max-h-[150px] w-2/3 xs:w-3/6 sm:w-2/6 md:w-1/4 lg:w-1/5"
       />
 
       <div className="hidden sm:flex flex-end gap-1 items-center">
         <Button>
-          <Link href={"/"}>Accueil</Link>
+          <Link href={"/admin"}>Accueil</Link>
         </Button>
         <Button>Voir le site</Button>
         <Button>Déconnexion</Button>
