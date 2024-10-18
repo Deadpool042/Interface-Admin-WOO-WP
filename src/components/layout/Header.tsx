@@ -76,7 +76,7 @@ export default function Header() {
 
       <div className="hidden sm:flex flex-end gap-1 items-center">
         <Button>
-          <Link href={"/admin"}>Accueil</Link>
+          <Link href={"/"}>Accueil</Link>
         </Button>
         <Button>Voir le site</Button>
         <Button>Déconnexion</Button>
