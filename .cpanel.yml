@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/rgjg6580/laurent.c2sportsprod.com/admin/interface
+    - /bin/bash -c "cd $DEPLOY_PATH && npm install && npm run build"
