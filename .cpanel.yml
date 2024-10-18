@@ -5,3 +5,5 @@ deployment:
     - /usr/local/bin/npm install
     - /usr/local/bin/npm run build
     - export DEPLOY_PATH=/home/rgjg6580/laurent.c2sportsprod.com/admin
+    - rsync -avz out/ /home/rgjg6580/laurent.c2sportsprod.com/admin/
+    - rsync -avz out/ $DEPLOY_PATH/
