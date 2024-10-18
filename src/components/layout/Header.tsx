@@ -105,7 +105,7 @@ export default function Header() {
             {/* Voir le site */}
             <li className="flex justify-between py-2 px-4 items-center cursor-pointer hover:bg-secondary-accent">
               <Link
-                href="https://www.c2sportsprods.com"
+                href="https://www.laurent.c2sportsprod.com"
                 className="flex gap-2"
                 rel="noopener noreferrer"
                 target="_blank">
