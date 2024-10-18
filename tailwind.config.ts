@@ -1,6 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./public/**/*.{html}" // Par exemple, pour inclure tout fichier HTML dans 'public'
+  ],
+  exclude: [
+    "./.git/**/*", // Exclure le dossier .git
+    "./node_modules/**/*" // Exclure le dossier node_modules
+  ],
   darkMode: ["class"],
   theme: {
     extend: {
