@@ -1,0 +1,22 @@
+/* src/styles/globals.css */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr; /* Sidebar de 250px et contenu qui prend le reste */
+  grid-template-rows: auto 1fr; /* Header auto height et contenu qui prend le reste */
+  grid-template-areas:
+    "header header"
+    "aside main";
+  min-height: 100vh;
+}
+
+.grid-header {
+  grid-area: header;
+}
+
+.grid-aside {
+  grid-area: aside;
+}
+
+.grid-main {
+  grid-area: main;
+}

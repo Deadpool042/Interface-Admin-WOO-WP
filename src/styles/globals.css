@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./layout/layout.css";
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+/* Palette de couleurs enrichie */
+:root {
+  /* Couleurs principales */
+  --primary: #d0b444; /* Jaune doré */
+  --primary-light: #e6c75b; /* Jaune doré clair */
+  --primary-dark: #b09833; /* Jaune doré foncé */
+  --primary-accent: #d0b444de; /* Accent jaune doré plus clair */
+
+  /* Couleurs secondaires (gris) */
+  --secondary: #757575; /* Gris moyen */
+  --secondary-light: #a4a4a4; /* Gris clair */
+  --secondary-dark: #494949; /* Gris foncé */
+  --secondary-accent: #cfcfcf; /* Gris très clair */
+
+  /* Couleurs d'alerte et d'état */
+  --success: #4caf50; /* Vert succès */
+  --success-light: #81c784; /* Vert clair */
+  --success-dark: #388e3c; /* Vert foncé */
+  --success-accent: #a5d6a7; /* Vert accent clair */
+
+  --warning: #ff9800; /* Orange avertissement */
+  --warning-light: #ffc947; /* Orange clair */
+  --warning-dark: #ef6c00; /* Orange foncé */
+  --warning-accent: #ffe0b2; /* Orange accentué */
+
+  --error: #f44336; /* Rouge erreur */
+  --error-light: #e57373; /* Rouge clair */
+  --error-dark: #d32f2f; /* Rouge foncé */
+  --error-accent: #ff8a80; /* Rouge accentué */
+
+  /* Couleurs d'information */
+  --info: #13283a; /* Bleu information */
+  --info-light: #64b5f6; /* Bleu clair */
+  --info-dark: #1976d2; /* Bleu foncé */
+  --info-accent: #bbdefb; /* Bleu accentué */
+
+  /* Couleurs de fond et de texte */
+  --background: #f5f5f5; /* Gris très clair pour le fond */
+  --foreground: #212121; /* Noir très foncé pour le texte */
+  --background-dark: #121212; /* Noir pour le mode sombre */
+  --foreground-dark: #ededed; /* Blanc cassé pour le texte en mode sombre */
+
+  /* Couleurs neutres */
+  --black: #000000; /* Noir pur */
+  --white: #ffffff; /* Blanc pur */
+  --gray-light: #e0e0e0; /* Gris clair */
+  --gray-dark: #757575; /* Gris foncé */
+
+  /* Tailles de typographie */
+  --h1-size: clamp(28px, 4vw + 1rem, 42px);
+  --h2-size: clamp(24px, 3.5vw + 1rem, 36px);
+  --h3-size: clamp(20px, 3vw + 0.75rem, 30px);
+  --h4-size: clamp(18px, 2.5vw + 0.5rem, 26px);
+  --h5-size: clamp(16px, 2vw + 0.25rem, 22px);
+  --h6-size: clamp(14px, 1.5vw + 0.25rem, 18px);
+  --paragraph-size: clamp(14px, 1.2vw, 18px);
+  --caption-size: clamp(12px, 1vw, 14px);
+  --small-size: clamp(10px, 0.8vw, 12px);
+  --tiny-size: clamp(8px, 0.6vw, 10px);
+
+  /* Hauteur de ligne */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.8;
+
+  /* Poids de police */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
