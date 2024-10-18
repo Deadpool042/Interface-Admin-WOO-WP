@@ -4,4 +4,3 @@ deployment:
     - export DEPLOY_PATH=/home/rgjg6580/laurent.c2sportsprod.com/admin
     - /bin/bash -c "cd $DEPLOY_PATH && npm install"
     - /bin/bash -c "cd $DEPLOY_PATH && npm run build"
-    - /bin/bash -c "cd $DEPLOY_PATH && npm run export"
