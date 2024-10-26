@@ -1,22 +1,48 @@
-/* src/styles/globals.css */
-.grid-layout {
+/* Container principal en grid */
+
+.container-grid {
   display: grid;
-  grid-template-columns: 220px 1fr; /* Sidebar de 250px et contenu qui prend le reste */
-  grid-template-rows: auto 1fr; /* Header auto height et contenu qui prend le reste */
   grid-template-areas:
     "header header"
-    "aside main";
-  min-height: 100vh;
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr 45px;
+
+  height: 100vh;
+  overflow: hidden;
 }
 
-.grid-header {
+@media (max-width: 640px) {
+  .container-grid {
+    grid-template-columns: 80px 1fr;
+  }
+}
+
+header {
   grid-area: header;
+  padding: 1rem;
 }
 
-.grid-aside {
-  grid-area: aside;
+.sidebar {
+  grid-area: sidebar;
+
+  /* height: calc(90vh); Ajuste la hauteur pour éviter le scroll */
+  z-index: 15;
+  top: 0;
 }
 
-.grid-main {
+.main {
   grid-area: main;
+  padding: 1rem;
+  overflow-y: auto; /* Seule la zone main est scrollable */
+
+  z-index: 10;
+}
+
+.footer-grid {
+  grid-area: footer;
+
+  height: 45px !important;
+  padding: 1rem;
 }

@@ -75,17 +75,19 @@ const ThemeToggle: React.FC = () => {
         <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-300 rounded-md shadow-lg z-10 dark:bg-gray-800 dark:border-gray-700 backdrop-blur-lg ">
           <ul className="py-1">
             <li
-              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer dark:hover:text-foreground-dark"
+              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 
+              dark:text-foreground-dark
+              dark:hover:bg-gray-700 cursor-pointer dark:hover:text-foreground-dark"
               onClick={() => handleToggle("light")}>
               <span>Clair</span>
             </li>
             <li
-              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer dark:hover:text-foreground-dark"
+              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100  dark:text-foreground-dark dark:hover:bg-gray-700 cursor-pointer dark:hover:text-foreground-dark"
               onClick={() => handleToggle("dark")}>
               <span>Sombre</span>
             </li>
             <li
-              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer dark:hover:text-foreground-dark"
+              className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100  dark:text-foreground-dark dark:hover:bg-gray-700 cursor-pointer dark:hover:text-foreground-dark"
               onClick={() => handleToggle("system")}>
               <span>Système</span>
             </li>

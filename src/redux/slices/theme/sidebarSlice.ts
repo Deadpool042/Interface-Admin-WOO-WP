@@ -6,7 +6,7 @@ interface SidebarState {
 }
 
 const initialState: SidebarState = {
-  isOpen: true // Par défaut, la sidebar est fermée
+  isOpen: false // Par défaut, la sidebar est fermée
 };
 
 const sidebarSlice = createSlice({

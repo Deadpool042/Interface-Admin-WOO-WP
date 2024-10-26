@@ -17,6 +17,7 @@ export const apiRequest = async (
 
   try {
     const response = await apiInstance(config);
+    console.log(response);
     return response.data;
   } catch (error) {
     console.error(`Erreur lors de la requête ${method} :`, error);

@@ -4,12 +4,15 @@ import config from "./config";
 // Création de l'instance WooCommerce avec authentification
 export const wooCommerceApi = axios.create({
   baseURL: config.woocommerce.apiUrl,
+
   auth: {
     username: config.woocommerce.consumerKey!,
     password: config.woocommerce.consumerSecret!
   }
 });
 
+console.log("SRC/API/CONFIG/axiosInstance: ", wooCommerceApi);
+console.log("SRC/API/CONFIG/axiosInstance:", config.woocommerce.consumerSecret);
 // Interceptor pour WooCommerce API pour gérer les erreurs globalement
 wooCommerceApi.interceptors.response.use(
   response => response,

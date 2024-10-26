@@ -2,8 +2,8 @@ const config = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
   woocommerce: {
     apiUrl: process.env.NEXT_PUBLIC_API_URL,
-    consumerKey: process.env.NEXT_PUBLIC_CONSUMER_KEY,
-    consumerSecret: process.env.NEXT_PUBLIC_CONSUMER_SECRET
+    consumerKey: process.env.WOOCOMMERCE_API_KEY,
+    consumerSecret: process.env.WOOCOMMERCE_API_SECRET
   },
   wordpress: {
     apiUrl: process.env.NEXT_PUBLIC_WP_BASE_URL,

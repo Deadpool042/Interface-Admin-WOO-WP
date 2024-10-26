@@ -22,16 +22,13 @@ export const useSystemTheme = () => {
     switch (savedTheme) {
       case "system":
         dispatch(toggleTheme(savedTheme));
-        console.log(`mode  ${theme}  sélectionné`);
         break;
       case "light":
         dispatch(toggleTheme(savedTheme));
-        console.log(`mode  ${theme}  sélectionné`);
         break;
       case "dark":
         dispatch(toggleTheme(savedTheme));
 
-        console.log(`mode  ${savedTheme}  sélectionné`);
         break;
     }
     const handleSystemChange = (e: MediaQueryListEvent | Event) => {

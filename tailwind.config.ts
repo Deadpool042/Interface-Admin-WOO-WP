@@ -1,14 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./public/**/*.{html}" // Par exemple, pour inclure tout fichier HTML dans 'public'
-  ],
-  exclude: [
-    "./.git/**/*", // Exclure le dossier .git
-    "./node_modules/**/*" // Exclure le dossier node_modules
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   theme: {
     extend: {
@@ -84,5 +76,9 @@ module.exports = {
       }
     }
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")]
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("daisyui")
+  ]
 };

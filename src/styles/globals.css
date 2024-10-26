@@ -75,4 +75,14 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+
+  /* Input */
+
+  input {
+    @apply bg-gray-200 text-foreground p-2  rounded-md  focus:ring-4 focus:ring-primary-dark focus:border-none my-2;
+  }
+
+  /* .dark input {
+    @apply bg-gray-800 text-white border-gray-600 focus:ring-primary-dark;
+  } */
 }
